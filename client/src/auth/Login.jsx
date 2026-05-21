@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Navbar from "./navbar";
 import '../styles/auth.css';
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../auth/firebase";
+import { auth } from "./firebase";
 import campusImg from "../assets/campus.png";
 
 
