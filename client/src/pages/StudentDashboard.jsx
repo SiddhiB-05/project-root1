@@ -213,9 +213,7 @@ const StudentDashboard = () => {
             return;
         }
 
-        const socket = io(API_BASE_URL, {
-            transports: ["websocket"],
-        });
+        const socket = io(API_BASE_URL);
 
         // Join socket room when userId is available
         if (userId) {

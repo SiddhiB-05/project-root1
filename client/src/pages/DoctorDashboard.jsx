@@ -35,9 +35,7 @@ const DoctorDashboard = () => {
 
   /* INIT SOCKET */
   useEffect(() => {
-    socketRef.current = io(`${API_BASE_URL}`, {
-      transports: ["websocket"],
-    });
+    socketRef.current = io(`${API_BASE_URL}`);
 
     return () => {
       socketRef.current.disconnect();
